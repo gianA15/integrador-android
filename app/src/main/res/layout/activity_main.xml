@@ -3,16 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#F96F6F"
+    android:layout_height="match_parent" >
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_icono"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btnSend"
+        >
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSend"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PROBANDO"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:layout_marginBottom="64dp"
+        android:text="REGISTER"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="3"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="531dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
